@@ -1,10 +1,14 @@
 /.env
+/.env.production
+/.env.staging
 /.idea
 /vendor
 .DS_Store
 /storage
 /web/assets
 /config/license.key
+/web/robots.txt
+/web/.htaccess
 
 # .data
 /.data
