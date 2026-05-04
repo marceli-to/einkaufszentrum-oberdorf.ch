@@ -130,8 +130,8 @@ FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
     RewriteEngine On
     
 # Redirect to non-www domain
-RewriteCond %{HTTP_HOST} !^www.einkaufszentrum-oberdorf\.ch$ [NC]
-RewriteRule ^(.*)$ https://www.einkaufszentrum-oberdorf.ch/$1 [R=301,L]    
+# RewriteCond %{HTTP_HOST} !^www.einkaufszentrum-oberdorf\.ch$ [NC]
+# RewriteRule ^(.*)$ https://www.einkaufszentrum-oberdorf.ch/$1 [R=301,L]    
 
     # Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f
