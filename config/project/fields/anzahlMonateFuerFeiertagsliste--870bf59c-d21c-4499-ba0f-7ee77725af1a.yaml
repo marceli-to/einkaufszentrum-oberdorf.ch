@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: smallint(2)
+fieldGroup: 42f5454d-dde0-4885-ac1a-70de5060e3f1 # Globals
+handle: anzahlMonateFuerFeiertagsliste
+instructions: 'Definiert, wie viele Monate im Voraus die Feiertage auf der Webseite ausgegeben werden'
+name: 'Anzahl Monate für Feiertagsliste'
+searchable: true
+settings:
+  decimals: 0
+  defaultValue: 4
+  max: 12
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

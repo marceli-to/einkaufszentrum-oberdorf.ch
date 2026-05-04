@@ -1,0 +1,64 @@
+{% extends "_layout" %}
+{% set title = "Events" %}
+
+{% block content %}
+        <div class="content">
+            <div class="container">
+				{% set postDateParam = '>= ' ~ now|date('Y-m-d') %}
+				{% set nextEvent = craft.entries.section('events').datumVon(postDateParam).inReverse().one() %}
+				
+					{% set bisPostDateParam = '>= ' ~ now|date("Y-m-d 00:01")|atom %}
+					{% set nextEvent = craft.entries.section('events').datumBis(bisPostDateParam).orderBy('datumVon ASC').one() %}
+              
+				{% if nextEvent|length == 0 %}
+					<h1 class="text-uppercase mb-4">Nächster Event: Kein Event geplant</h1>
+				{% else %}
+					<h1 class="text-uppercase mb-4">Nächster Event: {{ nextEvent.title }}</h1>
+					<h2 class="text-uppercase">{{ nextEvent.teaser|nl2br }}</h2>
+					<a href="{{ nextEvent.uri}}" class="btn btn-ui">Details</a>
+                {% endif %}
+                <div class="events">
+                    <h2 class="events-title">
+                        <img src="images/icon-vergangeneevents.png" class="events-title-icon">
+                        Vergangene Events
+                    </h2>
+
+                    <div class="row row-small-padding">
+						{% set postDateParam = '< ' ~ now|date('Y-m-d') %}
+						{% set pastEvents = craft.entries.section('events').datumBis(postDateParam) %}
+
+						{% if pastEvents|length == 0 %}
+							<h2 class="text-uppercase mb-4">Keine vergangene Events vorhanden</h2>
+						{% endif %}
+
+						{% for pastEvent in pastEvents.all() %}
+                        <div class="col-lg-6">
+                            <div class="event">
+                                <div class="event-image">
+									{% if pastEvent.impressionen|length %}
+									<img src="{{ pastEvent.impressionen.one().getUrl() }}" />
+									{% elseif pastEvent.eventbild|length %}
+                                    <img src="{{ pastEvent.eventbild.one().getUrl() }}" />
+									{% endif %}
+                                </div>
+
+                                <div class="event-details">
+                                    <h3 class="event-title">{{ pastEvent.title }}</h3>
+									{% if pastEvent.datumVon == pastEvent.datumBis %}
+										{% set dateString = pastEvent.datumVon|date("d. F Y") %}
+									{% else %}
+										{% set dateString = pastEvent.datumVon|date("d.") ~ " bis " ~ pastEvent.datumBis|date("d. F Y") %}
+									{% endif %}
+                                    <p class="event-date">{{ dateString }}</p>
+                                    <p class="event-desc">{{ pastEvent.teaser|nl2br }}</p>
+                                    <a href="{{ pastEvent.uri}}" class="btn btn-ui">Details</a>
+                                </div>
+                            </div>
+                        </div>
+						{% endfor %}						
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+{% endblock %}	

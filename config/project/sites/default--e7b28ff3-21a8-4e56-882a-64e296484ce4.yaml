@@ -1,0 +1,9 @@
+baseUrl: '@web/'
+enabled: true
+handle: default
+hasUrls: true
+language: de
+name: 'Einkaufszentrum Oberdorf'
+primary: true
+siteGroup: 0c6c66e9-1b67-4394-838e-137febb6e75a # Einkaufszentrum Oberdorf
+sortOrder: 1

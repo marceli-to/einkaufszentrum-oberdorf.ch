@@ -1,0 +1,17 @@
+columnSuffix: null
+contentColumnType: datetime
+fieldGroup: e6191f73-14c0-4002-875d-7413cf14aa0a # Events
+handle: datumBis
+instructions: 'Nach diesem Datum wird der Event auf der Webseite automatisch unter "Vergagene Events" angezeigt'
+name: 'Datum bis'
+searchable: true
+settings:
+  max: null
+  min: null
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

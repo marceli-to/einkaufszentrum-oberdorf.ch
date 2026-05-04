@@ -1,0 +1,83 @@
+fieldLayouts:
+  0f88367b-3ac8-4b8e-9852-46e4247bb30d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 34adf085-38e5-473e-b1e8-1147a5fbd016 # Logo
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7ef6b43f-abf3-4933-b0de-acc401c2e6c8 # Adresse / Strasse
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d062e465-4785-4a51-afad-1c89b2de75b8 # Telefonnummer
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e11f1e3e-dc29-4814-8516-ab5be53e5617 # Öffnungszeiten
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 56ea8089-a3b2-4c6c-88c1-af4996a2665a # Homepage
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Allgemein
+        sortOrder: 1
+handle: geschaefte
+hasTitleField: true
+name: Geschäfte
+section: 75132407-00d6-4168-8dd4-6ca8cdb3ab53 # Geschäfte
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

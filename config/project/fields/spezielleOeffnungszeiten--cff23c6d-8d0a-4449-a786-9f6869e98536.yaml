@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: 3522ee92-bae5-4263-88bf-83a823b09da3 # Feiertage
+handle: spezielleOeffnungszeiten
+instructions: ''
+name: 'Spezielle Öffnungszeiten'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: '1'
+  placeholder: geschlossen
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

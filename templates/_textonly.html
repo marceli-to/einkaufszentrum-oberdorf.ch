@@ -1,0 +1,11 @@
+{% extends "_layout" %}
+{% set title = entry.title  %}
+
+{% block content %}
+        <div class="content">
+            <div class="container">
+                <h1 class="text-uppercase mb-4">{{ entry.title }}</h1>
+                    {{ entry.inhalt }}
+            </div>
+        </div>
+{% endblock %}	

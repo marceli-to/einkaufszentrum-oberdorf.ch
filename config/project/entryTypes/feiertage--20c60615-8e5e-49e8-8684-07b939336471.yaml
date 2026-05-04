@@ -1,0 +1,47 @@
+fieldLayouts:
+  8722bb9c-f13c-4189-b9d0-e465ddba62fe:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: cff23c6d-8d0a-4449-a786-9f6869e98536 # Spezielle Öffnungszeiten
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Allgemein
+        sortOrder: 1
+handle: feiertage
+hasTitleField: true
+name: Feiertage
+section: 9cd1d27f-b8c1-4ac3-97dc-14d98eb0b9e9 # Feiertage
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

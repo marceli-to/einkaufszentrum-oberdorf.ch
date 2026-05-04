@@ -1,0 +1,19 @@
+fieldLayouts:
+  0a8eeab4-fa6b-4f35-ba12-706a9fd66e82:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c10833cd-5d5d-45dc-a183-a4c11dc06463 # Situationsplan
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Allgemein
+        sortOrder: 1
+handle: situationsplan
+name: Situationsplan
+sortOrder: 4

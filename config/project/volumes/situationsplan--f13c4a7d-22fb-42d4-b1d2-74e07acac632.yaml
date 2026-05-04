@@ -1,0 +1,38 @@
+fieldLayouts:
+  aa01a9df-52c4-4746-b129-d14e9c245f76:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fs: situationsplan
+handle: situationsplan
+hasUrls: true
+name: Situationsplan
+sortOrder: 4
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+url: /assets/situationsplan

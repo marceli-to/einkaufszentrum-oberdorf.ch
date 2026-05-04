@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+handle: oeffnungszeiten
+name: Öffnungszeiten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  e7b28ff3-21a8-4e56-882a-64e296484ce4: # Einkaufszentrum Oberdorf
+    enabledByDefault: true
+    hasUrls: true
+    template: oeffnungszeiten/_entry
+    uriFormat: oeffnungszeiten
+type: single

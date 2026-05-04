@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: cfcccbc2-fbbe-4175-afdb-d4a6f2f06418 # Common
+handle: geschaefte
+instructions: "Geschäfte, welche ebenfalls auf der Seite \"Öffnungszeiten\" aufgeführt werden sollen.\r\nDie Reihenfolge kann mit \"Drag and Drop\" angepasst werden."
+name: 'Zusätzliche Öffnungszeiten von Geschäften'
+searchable: true
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: 'Geschäft auswählen'
+  showSiteMenu: true
+  source: null
+  sources:
+    - 'section:75132407-00d6-4168-8dd4-6ca8cdb3ab53' # Geschäfte
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

@@ -1,0 +1,92 @@
+fieldLayouts:
+  0b1d675a-c673-4c1f-9659-3c7e019c6bcd:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: de043ede-a059-40bc-87fe-97e0b823c1fb # Firmenname
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 34adf085-38e5-473e-b1e8-1147a5fbd016 # Logo
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7ef6b43f-abf3-4933-b0de-acc401c2e6c8 # Adresse / Strasse
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1377ba8e-7744-4338-8a43-5a1569b02867 # PLZ / Ort
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d062e465-4785-4a51-afad-1c89b2de75b8 # Telefonnummer
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f0859012-5b35-46d5-9aa4-9ca8659055dd # E-Mail Adresse
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Allgemein
+        sortOrder: 1
+handle: kontakt
+hasTitleField: false
+name: Kontakt
+section: 7654f7b2-4ecb-4748-bc91-4ac32a8df2e1 # Kontakt
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

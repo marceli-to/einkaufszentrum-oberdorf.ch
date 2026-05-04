@@ -1,0 +1,46 @@
+fieldLayouts:
+  2136f4c6-bd79-4a7b-807f-eaac67863650:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: de043ede-a059-40bc-87fe-97e0b823c1fb # Firmenname
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 34adf085-38e5-473e-b1e8-1147a5fbd016 # Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7ef6b43f-abf3-4933-b0de-acc401c2e6c8 # Adresse / Strasse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1377ba8e-7744-4338-8a43-5a1569b02867 # PLZ / Ort
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Adresse
+        sortOrder: 1
+handle: kontaktangaben
+name: Adresse
+sortOrder: 2

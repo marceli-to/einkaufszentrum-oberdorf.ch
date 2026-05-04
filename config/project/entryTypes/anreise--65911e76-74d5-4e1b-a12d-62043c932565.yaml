@@ -1,0 +1,65 @@
+fieldLayouts:
+  79170625-126b-4d0d-bc60-e2ed87904afb:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29507e03-4949-4a19-9a13-cb0c8cda97d3 # Anreise mit dem Auto
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0c070d15-d298-4186-9ed7-72993d6de913 # Parkplätze
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ea37bf20-34b6-47d1-9a01-78e0a42a5504 # Anreise mit dem ÖV
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Anreise
+        sortOrder: 1
+handle: anreise
+hasTitleField: false
+name: Anreise
+section: 4c530aa4-873e-43dd-8475-c332525ec8cf # Anreise
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

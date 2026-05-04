@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: f23b95ef-47ef-4040-afc3-36df50d3eb1d # Anreise
+handle: teaser
+instructions: 'Text für Event-Übersicht'
+name: Teaser
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

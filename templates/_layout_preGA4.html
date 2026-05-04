@@ -1,0 +1,170 @@
+{% set navactive = "" %}
+<!DOCTYPE html>
+<html lang="de-ch">
+    <head>
+        <meta charset="utf-8">
+
+		<title>{% if craft.app.request.segments|first == "" %}Einkaufszentrum Oberdorf in Affoltern am Albis{%else%}{% if title is defined %}{{ title }} - {%else%}{{ entry.title is defined and entry.title is not empty ? entry.title : ''}}{% endif %} Einkaufszentrum Oberdorf in Affoltern am Albis{% endif %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="robots" content="index,follow" />
+		<meta name="revisit-after" content="10 days" />
+		<meta name="description" content="Zentrum Oberdorf - Ihr Einkaufszentrum in Affoltern am Albis mit vielen spannenden Geschäften." />
+		<meta name="keywords" content="Zentrum Oberdorf, Affoltern am Albis, Einkaufszentrum Oberdorf, Geschäfte, Migros, Migro, Lidl, Dosenbach, Apotheke, Swisscom, Augenarzt" />
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+		{% if craft.app.request.segments|first  == 'events' %}
+		<link rel="stylesheet" href="/css/ekko-lightbox.css" />
+		{% endif %}
+        <link rel="stylesheet" type="text/css" href="/css/style.css?v1.4" />
+		
+    </head>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126389029-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-126389029-1', { 'anonymize_ip': true });
+	</script>
+
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+
+                <a class="navbar-brand d-inline-block d-lg-none ml-auto" href="/">
+                    <img src="/images/logo.png" class="navbar-brand-img">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+
+						{%- set navItmLeft = {
+							'ANREISE' : 'anreise',
+							'ÖFFNUNGSZEITEN' : "oeffnungszeiten",
+							'GESCHÄFTE' : 'geschaefte',
+							'EVENTS' : 'events',
+							'KONTAKT' : "kontakt",
+						} -%}
+
+						{% set urlPrefix = '' %}
+
+						{%- for value,url in navItmLeft -%}
+
+							{% if url is iterable %}
+								{% for subvalue,suburl in url|slice(0,1) %}
+									<li {% if craft.app.request.segments|first == suburl and craft.app.request.segments|first  != "" %}class="nav-item active"{% else %}class="nav-item"{%endif%}>
+									{% if (value|lower == subvalue|lower and suburl == "") %}
+										<a class="nav-link" href="/{{urlPrefix}}#">{{value}}</a>
+									{% elseif value|lower == subvalue|lower and suburl != "" %}
+										<a class="nav-link" href="/{{urlPrefix}}{{suburl}}">{{value}}</a>
+									{% endif %}
+								{% endfor %}
+							{% else %}
+								<li {% if craft.app.request.segments|first  == url %}class="nav-item active"{% else %}class="nav-item"{%endif%}>
+								<a class="nav-link" href="/{{urlPrefix}}{{url}}">{{value}}</a>
+							{% endif %}
+							</li>
+						{%- endfor -%}
+                    </ul>
+                </div>
+
+                <a class="navbar-brand d-none d-lg-inline-block ml-auto" href="/">
+                    <img src="/images/logo.png" class="navbar-brand-img">
+                </a>
+            </div>
+        </nav>
+
+        <div class="banner">
+			{% set bannerEntry = craft.entries.section('headerBilder').slug(craft.app.request.segments|first).one() %}
+			{% if bannerEntry|length == 0 %}
+			{% set bannerEntry = craft.entries.section('headerBilder').slug('home').one() %}
+			{% endif %}
+			<img src="{{ bannerEntry.headerbild.one().getUrl() }}" class="banner-image">
+        </div>
+
+		{% block content %}{% endblock %}
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <ul class="footer-links">
+                            <li>
+                                <a href="/oeffnungszeiten">Öffnungszeiten</a>
+                            </li>
+							{% if situationsplan.situationsplan.one()|length %}
+							<li>
+                                <a href="{{ situationsplan.situationsplan.one().getUrl() }}" target="_blank">Situationsplan</a>
+                            </li>
+							{% endif %}
+                            <li>
+                                <a href="/datenschutz">Datenschutz</a>
+                            </li>
+                            <li>
+                                <a href="/impressum">Impressum</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <a class="font-weight-semibold text-uppercase" href="/oeffnungszeiten">Feiertage</a>
+						{% set postDateParam = '>= ' ~ now|date('U') %}
+						{% set anzahlFeiertageImFooter = layoutEinstellungen.anzahlFeiertageImFooter %}
+						{% set nextHolidays = craft.entries.section('feiertage').postDate(postDateParam).status('live, pending').inReverse().limit(anzahlFeiertageImFooter).all() %}
+						{% for nextHoliday in nextHolidays %}
+						{% if nextHoliday|length > 0 %}
+							<p class="row">
+								<span class="col-3 d-none d-sm-block">
+									{{ nextHoliday.postDate|date("D") }}
+								</span>
+								<span class="col">
+									{{ nextHoliday.postDate|date("d.m.Y") }}, {{ nextHoliday.title }}<br/>
+									{{ nextHoliday.spezielleOeffnungszeiten|nl2br }}
+								</span>
+							</p>
+						{% endif %}
+						{% endfor %}
+                    </div>
+
+                    <div class="col-lg-4">
+                        <a class="font-weight-semibold text-uppercase" href="/anreise">Adresse</a>
+                        <p>
+                            {{ kontaktangaben.firmenname }}
+                            <br/>
+                            {{ kontaktangaben.adresseStrasse }}
+                            <br/>
+                            {{ kontaktangaben.plzOrt }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">Copyright &copy; {{ now|date('Y') }} {{ kontaktangaben.firmenname }}</div>
+                    <div class="col-md-6 text-center text-md-right"><a href="https://www.stoz.ch" target="_blank">design by stoz</a></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/js/popper.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/scripts.js"></script>
+		{% if craft.app.request.segments|first  == 'events' %}
+        <script type="text/javascript" src="/js/ekko-lightbox.min.js"></script>
+		{% endif %}
+
+    </body>
+</html>

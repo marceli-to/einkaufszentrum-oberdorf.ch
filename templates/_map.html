@@ -1,0 +1,39 @@
+                <div id="map" style="height: 400px" class="map mt-5">
+                </div>				
+				
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe9DUbR88j_KQpGvYxu5qUSlW6NAkeU-c"></script>
+				<script>
+					function initialize() {
+
+					var mapCanvas = document.getElementById('map');
+					var mapLat = new google.maps.LatLng(47.278015,8.4529946);
+					var mapOptions = {
+					  center: mapLat,
+					  zoom: 15,
+					  mapTypeId: google.maps.MapTypeId.ROADMAP,
+					  streetViewControl: false,
+					  styles: [
+					  {
+						featureType: 'poi.business',
+						stylers: [{visibility: 'off'}]
+					  }]          
+					}
+
+				   var infowindow = new google.maps.InfoWindow({
+					  content: '<img src="{{ kontaktangaben.logo.one.getUrl() }}" style="width: 140px;margin: 5px 0px 5px 0px;"><br>{{ kontaktangaben.adresseStrasse }},<br>{{ kontaktangaben.plzOrt }}<br>{{ kontaktangaben.telefonnummer }}'
+					});        
+
+					var map = new google.maps.Map(mapCanvas, mapOptions);
+
+					var marker = new google.maps.Marker({
+						position: mapLat,
+						map: map,
+						title: "{{ kontaktangaben.firmenname }}",
+					});
+					marker.addListener('click', function() {
+					  infowindow.open(map, marker);
+					});
+					infowindow.open(map, marker);
+				  }
+				  google.maps.event.addDomListener(window, 'load', initialize);
+				</script>	

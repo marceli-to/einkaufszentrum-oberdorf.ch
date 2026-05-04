@@ -1,0 +1,28 @@
+{% extends "_layout" %}
+{% set title = "Home" %}
+
+{% block content %}
+        <div class="content">
+            <div class="container">
+                <h1 class="text-uppercase mb-4">{{ entry.ueberschrift }}</h1>
+
+                {{ entry.inhalt }}
+
+                <div class="shops">
+                    <div class="row row-small-padding">
+
+						{% for geschaeft in craft.entries.section('geschaefte').all() %}
+						{% set geschaeftUrl = geschaeft.homepage|replace({'https': '', 'http': '', '://' : '', ':/' : '', ':' : '', 'www.' : ''}) %}
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="http://www.{{ geschaeftUrl }}" target="_blank" class="shops-link">
+								{% if geschaeft.logo|length %}
+									<img src="{{ geschaeft.logo.one().getUrl() }}" />
+								{% endif %}
+                            </a>
+                        </div>
+						{% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

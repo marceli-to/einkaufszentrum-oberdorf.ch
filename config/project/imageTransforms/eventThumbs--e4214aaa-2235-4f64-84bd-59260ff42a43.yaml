@@ -1,0 +1,10 @@
+format: null
+handle: eventThumbs
+height: 432
+interlace: none
+mode: crop
+name: 'Event Thumbs'
+position: center-center
+quality: 82
+upscale: true
+width: 480

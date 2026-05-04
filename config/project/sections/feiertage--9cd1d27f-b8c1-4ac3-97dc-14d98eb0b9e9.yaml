@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: feiertage
+name: Feiertage
+propagationMethod: all
+siteSettings:
+  e7b28ff3-21a8-4e56-882a-64e296484ce4: # Einkaufszentrum Oberdorf
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

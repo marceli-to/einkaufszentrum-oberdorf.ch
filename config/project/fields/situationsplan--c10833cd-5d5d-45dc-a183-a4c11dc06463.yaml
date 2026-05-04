@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 42f5454d-dde0-4885-ac1a-70de5060e3f1 # Globals
+handle: situationsplan
+instructions: ''
+name: Situationsplan
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+    - pdf
+  defaultUploadLocationSource: 'volume:a220bbed-762c-4e7e-929f-7e3e06b3b308' # Logos
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  singleUploadLocationSource: 'volume:f13c4a7d-22fb-42d4-b1d2-74e07acac632' # Situationsplan
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,78 @@
+fieldLayouts:
+  54403f00-df5b-46c3-ba2b-ee543bcc94fd:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: e11f1e3e-dc29-4814-8516-ab5be53e5617 # Öffnungszeiten
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e1471f73-6641-41fb-9dd5-998d418f80df # Zusätzliche Öffnungszeiten von Geschäften
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Öffnungszeiten
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: a790ea81-5c41-441a-a89a-91f1e6976ece # Feiertage
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0153f826-1419-4524-b063-2d06aa9cd3ed # Feiertage2
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Feiertage
+        sortOrder: 2
+handle: oeffnungszeiten
+hasTitleField: false
+name: Öffnungszeiten
+section: 1088dbc5-28f6-4763-9fd0-f6ad05dc1778 # Öffnungszeiten
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

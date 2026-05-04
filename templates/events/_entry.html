@@ -1,0 +1,47 @@
+{% extends "_layout" %}
+{% set title = entry.title %}
+
+{% block content %}
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <h1 class="text-uppercase mb-4">{{ entry.title }}</h1>
+						{{ entry.inhalt }}
+                    </div>
+
+                    <div class="col-lg-6">
+						{% if entry.flyer|length %}
+						<a href="{{ entry.flyer.one().getUrl() }}" target="_blank">
+						{% endif %}
+						
+						{% if entry.eventbild|length %}
+						<img src="{{ entry.eventbild.one().getUrl('eventFlyer') }}" class="img-fluid m-auto" />
+						{% endif %}
+						
+						{% if entry.flyer|length %}
+						</a>
+						{% endif %}
+                    </div>
+                </div>
+
+				{% if entry.impressionen|length %}
+                <div class="gray-box event-gallery">
+                    <h2 class="gray-box-title">
+                        Impressionen
+                    </h2>
+
+                    <div class="row row-small-padding">
+						{% for pic in entry.impressionen.all() %}
+                        <div class="col-lg-3">
+                            <a href="{{ pic.getUrl() }}" data-toggle="lightbox" data-title="{{ entry.title }}" data-gallery="event-image-gallery" class="event-gallery-image">
+                                <img src="{{ pic.getUrl('eventThumbs') }}"/>
+                            </a>
+                        </div>
+						{% endfor %}
+                    </div>
+                </div>
+				{% endif %}
+            </div>
+        </div>
+{% endblock %}

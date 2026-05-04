@@ -1,0 +1,36 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: cfcccbc2-fbbe-4175-afdb-d4a6f2f06418 # Common
+handle: feiertage2
+instructions: ''
+name: Feiertage2
+searchable: true
+settings:
+  columns:
+    23:
+      __assoc__:
+        -
+          - width
+          - ''
+    24:
+      __assoc__:
+        -
+          - width
+          - ''
+    25:
+      __assoc__:
+        -
+          - width
+          - ''
+  contentTable: '{{%stc_feiertage2}}'
+  fieldLayout: table
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

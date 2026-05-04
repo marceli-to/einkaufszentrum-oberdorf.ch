@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: geschaefte
+name: Geschäfte
+propagationMethod: all
+siteSettings:
+  e7b28ff3-21a8-4e56-882a-64e296484ce4: # Einkaufszentrum Oberdorf
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 37835f50-7df8-4582-af4a-dd492874095e
+type: structure

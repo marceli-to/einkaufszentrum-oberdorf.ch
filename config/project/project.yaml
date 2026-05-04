@@ -1,0 +1,183 @@
+dateModified: 1777879975
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Inhalte
+      type: heading
+    -
+      key: 'section:fd42d4af-d3c1-41c8-9629-4b83b510fde4' # Header-Bilder
+      tableAttributes:
+        - 'field:3b709f8d-9b93-4c62-80d4-fc716c801e97' # Headerbild
+        - dateUpdated
+      type: native
+    -
+      key: 'single:5'
+      type: native
+    -
+      key: 'single:2'
+      type: native
+    -
+      key: 'single:3'
+      type: native
+    -
+      key: 'section:9cd1d27f-b8c1-4ac3-97dc-14d98eb0b9e9' # Feiertage
+      type: native
+    -
+      key: 'section:75132407-00d6-4168-8dd4-6ca8cdb3ab53' # Geschäfte
+      tableAttributes:
+        - 'field:d062e465-4785-4a51-afad-1c89b2de75b8' # Telefonnummer
+        - 'field:56ea8089-a3b2-4c6c-88c1-af4996a2665a' # Homepage
+        - link
+      type: native
+    -
+      key: 'section:10bc6fa6-c814-42d3-b2fa-dd86898f77c4' # Events
+      tableAttributes:
+        - 'field:f99f6463-b545-422c-9d62-3bdf16a6c0d7' # Datum bis
+        - 'field:cee2c238-bf6b-409b-9564-69214a0c40a1' # Datum von
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'single:4'
+      type: native
+    -
+      key: 'single:7'
+      type: native
+    -
+      key: 'single:6'
+      type: native
+email:
+  fromEmail: info@nexocom.ch
+  fromName: 'Einkaufszentrum Oberdorf'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  events:
+    hasUrls: true
+    name: Events
+    settings:
+      path: '@webroot/assets/events'
+    type: craft\fs\Local
+    url: /assets/events
+  header:
+    hasUrls: true
+    name: Header
+    settings:
+      path: '@webroot/assets/header'
+    type: craft\fs\Local
+    url: /assets/header
+  logos:
+    hasUrls: true
+    name: Logos
+    settings:
+      path: '@webroot/assets/logos'
+    type: craft\fs\Local
+    url: /assets/logos
+  situationsplan:
+    hasUrls: true
+    name: Situationsplan
+    settings:
+      path: '@webroot/assets/situationsplan'
+    type: craft\fs\Local
+    url: /assets/situationsplan
+meta:
+  __names__:
+    0ac1969a-ef35-4047-a080-602e211ceea2: Events # Events
+    0c070d15-d298-4186-9ed7-72993d6de913: Parkplätze # Parkplätze
+    0c6c66e9-1b67-4394-838e-137febb6e75a: 'Einkaufszentrum Oberdorf' # Einkaufszentrum Oberdorf
+    2a6fd590-ae9c-4561-9f40-d67bc4d2fbde: Header # Header
+    2b606b53-e39f-4e69-8ad4-3c873f9df287: Datenschutz # Datenschutz
+    3aebbc61-8fa6-4d22-a3dd-fc88269b10b5: 'Layout Einstellungen' # Layout Einstellungen
+    3b709f8d-9b93-4c62-80d4-fc716c801e97: Headerbild # Headerbild
+    4c530aa4-873e-43dd-8475-c332525ec8cf: Anreise # Anreise
+    4dbe05da-6f39-4e9f-9c93-87d60a1272fb: Kunden # Kunden
+    4e8e8e7f-2bf8-45f5-94ec-ad1bbb0e3f6c: Öffnungszeiten # Öffnungszeiten
+    5b9843e1-c697-43e7-81db-c6d8cec827c9: Impressum # Impressum
+    6ab00e89-2626-467f-95ff-7dae17bd7702: Situationsplan # Situationsplan
+    7b2a1697-f015-4671-8f97-c0fbc07c6d56: Öffnungszeiten # Öffnungszeiten
+    7ef6b43f-abf3-4933-b0de-acc401c2e6c8: 'Adresse / Strasse' # Adresse / Strasse
+    9a3bbb2f-5072-4480-b3a9-56c3f0e1bb45: Impressum # Impressum
+    9cd1d27f-b8c1-4ac3-97dc-14d98eb0b9e9: Feiertage # Feiertage
+    10bc6fa6-c814-42d3-b2fa-dd86898f77c4: Events # Events
+    010e2eae-edd1-4423-bf7b-b1eead9f23a9: 'Datum von' # Datum von
+    20c60615-8e5e-49e8-8684-07b939336471: Feiertage # Feiertage
+    25e163a3-5972-44e2-b154-bea102a7a96f: 'Event Flyer' # Event Flyer
+    34adf085-38e5-473e-b1e8-1147a5fbd016: Logo # Logo
+    42f5454d-dde0-4885-ac1a-70de5060e3f1: Globals # Globals
+    56ea8089-a3b2-4c6c-88c1-af4996a2665a: Homepage # Homepage
+    122f1d21-d137-4709-b20d-3e48a5368e8a: 'Flyer (PDF)' # Flyer (PDF)
+    0153f826-1419-4524-b063-2d06aa9cd3ed: Feiertage2 # Feiertage2
+    306cac23-3163-4d49-9aba-0298ad942bfe: 'Datum bis' # Datum bis
+    870bf59c-d21c-4499-ba0f-7ee77725af1a: 'Anzahl Monate für Feiertagsliste' # Anzahl Monate für Feiertagsliste
+    948d4c6a-e690-48e2-bcfe-09ce56596a26: Inhalt # Inhalt
+    1088dbc5-28f6-4763-9fd0-f6ad05dc1778: Öffnungszeiten # Öffnungszeiten
+    1377ba8e-7744-4338-8a43-5a1569b02867: 'PLZ / Ort' # PLZ / Ort
+    2253acb6-c3d3-492b-b9ef-740a41626944: Öffnungszeiten # Öffnungszeiten
+    3167be11-4753-4019-8155-44955a22753c: Bezeichnung # Bezeichnung
+    3522ee92-bae5-4263-88bf-83a823b09da3: Feiertage # Feiertage
+    6396c39f-2cf0-4639-90a7-c060ab18e9ba: 'Public Schema' # Public Schema
+    7654f7b2-4ecb-4748-bc91-4ac32a8df2e1: Kontakt # Kontakt
+    29507e03-4949-4a19-9a13-cb0c8cda97d3: 'Anreise mit dem Auto' # Anreise mit dem Auto
+    65911e76-74d5-4e1b-a12d-62043c932565: Anreise # Anreise
+    90059fd3-cd62-41c0-9e28-112b67c69e9c: Events # Events
+    23037599-cf9a-467b-9abf-1927a7cc070e: 'Anzahl Feiertage im Footer' # Anzahl Feiertage im Footer
+    75132407-00d6-4168-8dd4-6ca8cdb3ab53: Geschäfte # Geschäfte
+    a04be42f-d032-48d9-839b-d555637df0bf: Teaser # Teaser
+    a2eac6b8-229f-47d3-823a-ac466d18c8aa: Bezeichnung # Bezeichnung
+    a220bbed-762c-4e7e-929f-7e3e06b3b308: Logos # Logos
+    a790ea81-5c41-441a-a89a-91f1e6976ece: Feiertage # Feiertage
+    bd5bc4d7-859f-472e-9fcf-3f0d2b6b0972: 'Feiertag hinzufügen' # Feiertag hinzufügen
+    c09546bf-bbe4-494d-9bf8-6fba7dca07b2: Impressionen # Impressionen
+    c4103a61-bed0-4963-a63f-58c5833a62f5: Überschrift # Überschrift
+    c10833cd-5d5d-45dc-a183-a4c11dc06463: Situationsplan # Situationsplan
+    c1804562-643d-41e2-812a-0f41ce3e215a: Home # Home
+    ce60ab76-c239-4d69-a82b-0f36b3c14cec: Header-Bilder # Header-Bilder
+    cee2c238-bf6b-409b-9564-69214a0c40a1: 'Datum von' # Datum von
+    cfcccbc2-fbbe-4175-afdb-d4a6f2f06418: Common # Common
+    cff23c6d-8d0a-4449-a786-9f6869e98536: 'Spezielle Öffnungszeiten' # Spezielle Öffnungszeiten
+    d062e465-4785-4a51-afad-1c89b2de75b8: Telefonnummer # Telefonnummer
+    d52365af-0bef-4323-8738-3f94499584f7: Datenschutz # Datenschutz
+    dbf76e58-be54-48ce-93b6-fa2795a99d21: Kontakt # Kontakt
+    de043ede-a059-40bc-87fe-97e0b823c1fb: Firmenname # Firmenname
+    e2b8d4da-7cb5-44fe-a021-bacc1e9de898: Eventbild # Eventbild
+    e7b28ff3-21a8-4e56-882a-64e296484ce4: 'Einkaufszentrum Oberdorf' # Einkaufszentrum Oberdorf
+    e11f1e3e-dc29-4814-8516-ab5be53e5617: Öffnungszeiten # Öffnungszeiten
+    e83f272c-61fe-4392-b854-5dd7d15628cb: Geschäfte # Geschäfte
+    e1471f73-6641-41fb-9dd5-998d418f80df: 'Zusätzliche Öffnungszeiten von Geschäften' # Zusätzliche Öffnungszeiten von Geschäften
+    e4214aaa-2235-4f64-84bd-59260ff42a43: 'Event Thumbs' # Event Thumbs
+    e6191f73-14c0-4002-875d-7413cf14aa0a: Events # Events
+    ea37bf20-34b6-47d1-9a01-78e0a42a5504: 'Anreise mit dem ÖV' # Anreise mit dem ÖV
+    f0859012-5b35-46d5-9aa4-9ca8659055dd: 'E-Mail Adresse' # E-Mail Adresse
+    f13c4a7d-22fb-42d4-b1d2-74e07acac632: Situationsplan # Situationsplan
+    f23b95ef-47ef-4040-afc3-36df50d3eb1d: Anreise # Anreise
+    f99f6463-b545-422c-9d62-3bdf16a6c0d7: 'Datum bis' # Datum bis
+    f162ab5b-0e8b-4781-a01e-3f759b3a83f6: Datum # Datum
+    fa5319b4-be74-4558-b0e0-57c72eb6acd0: Home # Home
+    fc7c761f-f1d6-4f0a-8640-1f9976e88e4f: Adresse # Adresse
+    fd42d4af-d3c1-41c8-9629-4b83b510fde4: Header-Bilder # Header-Bilder
+plugins:
+  expanded-singles:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings:
+      expandSingles: '1'
+      redirectToEntry: '1'
+  redactor:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 2.3.0
+    settings: null
+  super-table:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 3.0.0
+    settings: null
+system:
+  edition: pro
+  live: true
+  name: 'Einkaufszentrum Oberdorf'
+  schemaVersion: 4.17.0.3
+  timeZone: America/Los_Angeles

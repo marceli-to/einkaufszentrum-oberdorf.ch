@@ -1,0 +1,19 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: cfcccbc2-fbbe-4175-afdb-d4a6f2f06418 # Common
+handle: telefonnummer
+instructions: ''
+name: Telefonnummer
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: '043 123 44 55'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,49 @@
+{% extends "_layout" %}
+{% set title = "Geschäfte" %}
+
+{% block content %}
+        <div class="content">
+            <div class="container">
+                <h1 class="text-uppercase mb-4">Geschäfte</h1>
+
+                <div class="business">
+                    <div class="row row-small-padding">
+						{% for geschaeft in craft.entries.section('geschaefte').all() %}
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="business-link">
+                                <div class="business-link-image">
+									{% if geschaeft.logo|length %}
+										<img src="{{ geschaeft.logo.one().getUrl() }}" />
+									{% endif %}
+                                </div>
+                                <div class="business-link-details">
+                                    <div class="business-link-row">{{ geschaeft.adresseStrasse }}</div>
+                                    <div class="business-link-row">
+                                        <span>Telefon</span>
+                                        {{ geschaeft.telefonnummer }}
+                                    </div>
+									{% for oeffnungszeit in geschaeft.oeffnungszeiten %}
+                                    <div class="business-link-row">
+                                        <span>{{ oeffnungszeit.tage }}</span>
+                                        {{ oeffnungszeit.zeit }}
+                                    </div>
+									{% endfor %}
+
+                                    {% set geschaeftUrl = geschaeft.homepage|replace({'https': '', 'http': '', '://' : '', ':/' : '', ':' : '', 'www.' : ''}) %}
+                                    {% set geschaeftUrlShort = geschaeftUrl|split('/',2) %}
+                                    <a class="business-link-a" href="http://www.{{ geschaeftUrl }}" target="_blank">
+                                    {% if geschaeftUrlShort|length %}
+                                        www.{{ geschaeftUrlShort[0] }}
+                                    {% else %}
+                                        www.{{ geschaeftUrl }}
+                                    {% endif %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+						{% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

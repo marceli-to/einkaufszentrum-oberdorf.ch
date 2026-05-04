@@ -1,0 +1,47 @@
+fieldLayouts:
+  ef2f28b6-e137-40fc-8b74-6a2a3c022227:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 948d4c6a-e690-48e2-bcfe-09ce56596a26 # Inhalt
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Allgemein
+        sortOrder: 1
+handle: impressum
+hasTitleField: false
+name: Impressum
+section: 5b9843e1-c697-43e7-81db-c6d8cec827c9 # Impressum
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,124 @@
+field: a790ea81-5c41-441a-a89a-91f1e6976ece # Feiertage
+fieldLayouts:
+  e192243a-d8b4-44e1-af4f-287e4c3ec705:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 010e2eae-edd1-4423-bf7b-b1eead9f23a9 # Datum von
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 306cac23-3163-4d49-9aba-0298ad942bfe # Datum bis
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3167be11-4753-4019-8155-44955a22753c # Bezeichnung
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7b2a1697-f015-4671-8f97-c0fbc07c6d56 # Öffnungszeiten
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7b2a1697-f015-4671-8f97-c0fbc07c6d56: # Öffnungszeiten
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: oeffnungszeiten
+    instructions: 'z.B. regulär geöffnet'
+    name: Öffnungszeiten
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '6'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  010e2eae-edd1-4423-bf7b-b1eead9f23a9: # Datum von
+    columnSuffix: null
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: datumVon
+    instructions: ''
+    name: 'Datum von'
+    searchable: true
+    settings:
+      max: null
+      min: null
+      minuteIncrement: '30'
+      showDate: true
+      showTime: false
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  306cac23-3163-4d49-9aba-0298ad942bfe: # Datum bis
+    columnSuffix: null
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: datumBis
+    instructions: ''
+    name: 'Datum bis'
+    searchable: true
+    settings:
+      max: null
+      min: null
+      minuteIncrement: '30'
+      showDate: true
+      showTime: false
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  3167be11-4753-4019-8155-44955a22753c: # Bezeichnung
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: bezeichnung
+    instructions: ''
+    name: Bezeichnung
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: feiertag
+name: 'Feiertag hinzufügen'
+sortOrder: 1

@@ -1,0 +1,38 @@
+fieldLayouts:
+  ef6cf87f-ed3c-4e30-96b6-bb32409d6ffa:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fs: header
+handle: header
+hasUrls: true
+name: Header
+sortOrder: 3
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+url: /assets/header

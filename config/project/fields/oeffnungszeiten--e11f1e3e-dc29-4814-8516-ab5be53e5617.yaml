@@ -1,0 +1,58 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: cfcccbc2-fbbe-4175-afdb-d4a6f2f06418 # Common
+handle: oeffnungszeiten
+instructions: ''
+name: Öffnungszeiten
+searchable: true
+settings:
+  addRowLabel: 'Zeile hinzufügen'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Tag(e)
+            -
+              - handle
+              - tage
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Zeit
+            -
+              - handle
+              - zeit
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - Mo–Fr
+        -
+          - col2
+          - '09.00–19.00 Uhr'
+  maxRows: ''
+  minRows: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

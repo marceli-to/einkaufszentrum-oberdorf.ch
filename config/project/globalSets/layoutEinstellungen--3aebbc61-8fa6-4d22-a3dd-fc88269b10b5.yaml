@@ -1,0 +1,28 @@
+fieldLayouts:
+  32109db6-5016-4a80-becc-95825aab8c55:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 23037599-cf9a-467b-9abf-1927a7cc070e # Anzahl Feiertage im Footer
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 870bf59c-d21c-4499-ba0f-7ee77725af1a # Anzahl Monate für Feiertagsliste
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Einstellungen
+        sortOrder: 1
+handle: layoutEinstellungen
+name: 'Layout Einstellungen'
+sortOrder: 3

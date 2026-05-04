@@ -1,0 +1,116 @@
+{% extends "_layout" %}
+{% set title = entry.title %}
+
+{% block content %}
+
+	{#
+	{% set entries = craft.entries.section('feiertage').feiertage.all() %}
+	{% set entriesByMonth = entries|group('postDate|date("Y-m")') %}
+	{% for month, entries in entriesByMonth %}
+	  <li>
+		  <a href="{{ month|date("Y") }}/{{ month|date("m") }}">
+			{{ entries | length }} entries in {{ month|date("F Y") }}
+		  </a>
+	  </li>
+	{% endfor %}
+	
+	{% set feiertage = entry.feiertage %}
+	{% set feiertagMonate = feiertage.all()|group('datumVon|date("F Y")') %}
+
+	{% for feiertagMonat, feiertage in feiertagMonate %}
+		<h2>{{ feiertagMonat }}</h2>
+		<ul>
+		{% for feiertag in feiertage %}
+			#}{#
+			{% set playerData = craft.entries.section('myPlayersChannel').relatedTo(player).first() %}
+			<li>
+				{{ playerData.fullName }}
+				{{ playerData.age }}
+				...
+			</li>#}{#
+			{{ feiertag.bezeichnung }}
+		{% endfor %}
+		</ul>
+	{% endfor %}
+	#}
+	
+        <div class="content">
+            <div class="container">
+                <h1 class="text-uppercase mb-4">ÖFFNUNGSZEITEN</h1>
+
+                <div class="row row-small-padding">
+                    <div class="col-lg-6">
+                        <div class="gray-box h-100">
+                            <h3 class="gray-box-title">
+                                <img src="images/icon-oeffnungszeiten.png" class="gray-box-title-icon">
+                                Allgemeine Öffnungszeiten
+                            </h3>
+                            <div class="font-weight-semibold text-uppercase">Zentrum Oberdorf</div>
+
+							{% for oeffnungszeit in entry.oeffnungszeiten %}
+								<div class="row {{ loop.index0 > 0 ? 'mb-2' : '' }}">
+									<div class="col-4">{{ oeffnungszeit.tage }}</div>
+									<div class="col-8">{{ oeffnungszeit.zeit }}</div>
+								</div>
+							{% endfor %}
+
+							{% for geschaeft in entry.geschaefte.all() %}
+								<div class="font-weight-semibold text-uppercase">{{ geschaeft.title }}</div>
+								{% for oeffnungszeit in geschaeft.oeffnungszeiten %}
+									<div class="row {{ loop.index0 > 0 or geschaeft.oeffnungszeiten|length == 1 ? 'mb-2' : '' }}">
+										<div class="col-4">{{ oeffnungszeit.tage }}</div>
+										<div class="col-8">{{ oeffnungszeit.zeit }}</div>
+									</div>
+								{% endfor %}
+							{% endfor %}
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-3 mt-lg-0">
+                        <div class="gray-box h-100">
+							{% set feiertageJahre = '' %}
+							{% set anzahlMonateFuerFeiertagsliste = layoutEinstellungen.anzahlMonateFuerFeiertagsliste %}
+							{% set postDateParam = ['and', '>= ' ~ now|date('U'), '<' ~ now|date_modify('5:00 +' ~ anzahlMonateFuerFeiertagsliste ~ ' months')|date('U')] %}
+							{% set futureHolidays = craft.entries.section('feiertage').status('live, pending').postDate(postDateParam).inreverse.all() %}
+
+							{% set entriesByYear = futureHolidays|group('postDate|date("Y")') %}
+							{% for year, dummy in entriesByYear %}
+								{% if loop.index0 == 0 %}
+									{% set feiertageJahre = year %}
+								{% else %}
+									{% set feiertageJahre = feiertageJahre ~ '/' ~ year %}
+								{% endif %}
+							{% endfor %}
+							
+							<h3 class="gray-box-title">
+								<img src="images/icon-feiertage.png" class="gray-box-title-icon">
+								Feiertage {{ feiertageJahre }}
+							</h3>							
+							
+							{% if futureHolidays|length == 0 %}
+							<p>Keine Feiertage erfasst</p>
+							{% else %}							
+							
+							{% set entriesByMonth = futureHolidays|group('postDate|date("Y-m")') %}
+							
+							{% for month, entries in entriesByMonth %}
+								<div class="font-weight-semibold text-uppercase mt-2">{{ month|date("F Y") }}</div>
+								{% for entry in entries %}
+									<div class="row">
+										<div class="col-3">{{ entry.postDate|date("d.m.Y") }} </div>
+										<div class="col-4">{{ entry.title }}</div>
+										<div class="col-5">{{ entry.spezielleOeffnungszeiten|nl2br }}</div>
+									</div>							
+								{% endfor %}
+							{% endfor %}
+							
+							{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+	
+	
+{% endblock %}

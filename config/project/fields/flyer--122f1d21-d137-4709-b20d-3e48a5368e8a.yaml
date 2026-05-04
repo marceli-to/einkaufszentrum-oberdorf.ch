@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e6191f73-14c0-4002-875d-7413cf14aa0a # Events
+handle: flyer
+instructions: 'Falls vorhanden, PDF zum Event'
+name: 'Flyer (PDF)'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - pdf
+  defaultUploadLocationSource: 'volume:90059fd3-cd62-41c0-9e28-112b67c69e9c' # Events
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Flyer hinzufügen'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  singleUploadLocationSource: 'volume:90059fd3-cd62-41c0-9e28-112b67c69e9c' # Events
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:90059fd3-cd62-41c0-9e28-112b67c69e9c' # Events
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

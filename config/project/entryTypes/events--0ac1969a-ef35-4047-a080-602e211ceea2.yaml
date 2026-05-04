@@ -1,0 +1,105 @@
+fieldLayouts:
+  f7da5368-6a0d-4160-b7d0-9f51b45990c1:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: cee2c238-bf6b-409b-9564-69214a0c40a1 # Datum von
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f99f6463-b545-422c-9d62-3bdf16a6c0d7 # Datum bis
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e2b8d4da-7cb5-44fe-a021-bacc1e9de898 # Eventbild
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 122f1d21-d137-4709-b20d-3e48a5368e8a # Flyer (PDF)
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a04be42f-d032-48d9-839b-d555637df0bf # Teaser
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 948d4c6a-e690-48e2-bcfe-09ce56596a26 # Inhalt
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Allgemein
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: c09546bf-bbe4-494d-9bf8-6fba7dca07b2 # Impressionen
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Impressionen
+        sortOrder: 2
+handle: events
+hasTitleField: true
+name: Events
+section: 10bc6fa6-c814-42d3-b2fa-dd86898f77c4 # Events
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

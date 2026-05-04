@@ -1,0 +1,27 @@
+columnSuffix: null
+contentColumnType: text
+fieldGroup: cfcccbc2-fbbe-4175-afdb-d4a6f2f06418 # Common
+handle: inhalt
+instructions: ''
+name: Inhalt
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

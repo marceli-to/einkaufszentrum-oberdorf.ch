@@ -1,0 +1,47 @@
+fieldLayouts:
+  014139b6-ff3b-4325-b9fa-796c6d2b59b6:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3b709f8d-9b93-4c62-80d4-fc716c801e97 # Headerbild
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Allgemein
+        sortOrder: 1
+handle: headerBilder
+hasTitleField: true
+name: Header-Bilder
+section: fd42d4af-d3c1-41c8-9629-4b83b510fde4 # Header-Bilder
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

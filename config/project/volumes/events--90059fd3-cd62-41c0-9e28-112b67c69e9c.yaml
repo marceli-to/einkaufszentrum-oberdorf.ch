@@ -1,0 +1,38 @@
+fieldLayouts:
+  ac8b2616-0298-464f-b49d-0b3acbcf70b3:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fs: events
+handle: events
+hasUrls: true
+name: Events
+sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+url: /assets/events

@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: headerBilder
+name: Header-Bilder
+propagationMethod: all
+siteSettings:
+  e7b28ff3-21a8-4e56-882a-64e296484ce4: # Einkaufszentrum Oberdorf
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: e5277e43-2648-4bef-bbd1-be8de16d5921
+type: structure

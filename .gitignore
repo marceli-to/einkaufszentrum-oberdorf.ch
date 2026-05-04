@@ -1,0 +1,9 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+/storage
+/web/assets
+
+# .data
+/.data

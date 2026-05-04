@@ -1,0 +1,42 @@
+{% extends "_layout" %}
+{% set title = "Anreise" %}
+
+{% block content %}
+        <div class="content">
+            <div class="container">
+                
+				{% include '/_map' %}
+
+                <div class="row row-small-padding anreise">
+                    <div class="col-lg-6">
+                        <div class="gray-box">
+                            <h3 class="gray-box-title">
+                                <img src="images/icon-auto.png" class="gray-box-title-icon">
+                                Anreise mit dem Auto
+                            </h3>
+                            {{ entry.anreiseMitDemAuto }}
+                        </div>
+
+                        <div class="gray-box">
+                            <h3 class="gray-box-title">
+                                <img src="images/icon-parking.png" class="gray-box-title-icon">
+                                Parkplätze
+                            </h3>
+                            {{ entry.parkplaetze }}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-3 mt-lg-0">
+                        <div class="gray-box h-100">
+                            <h3 class="gray-box-title">
+                                <img src="images/icon-zug.png" class="gray-box-title-icon">
+                                Anreise mit dem öV
+                            </h3>
+                            {{ entry.anreiseMitDemOev }}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+{% endblock %}	

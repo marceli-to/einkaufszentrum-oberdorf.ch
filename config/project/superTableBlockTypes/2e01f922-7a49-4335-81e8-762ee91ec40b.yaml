@@ -1,0 +1,94 @@
+field: 0153f826-1419-4524-b063-2d06aa9cd3ed # Feiertage2
+fieldLayouts:
+  d75b19cb-73a7-4836-8a68-6b1798c00114:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f162ab5b-0e8b-4781-a01e-3f759b3a83f6 # Datum
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a2eac6b8-229f-47d3-823a-ac466d18c8aa # Bezeichnung
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2253acb6-c3d3-492b-b9ef-740a41626944 # Öffnungszeiten
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2253acb6-c3d3-492b-b9ef-740a41626944: # Öffnungszeiten
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: oeffnungszeiten
+    instructions: 'z.B. regulär geöffnet'
+    name: Öffnungszeiten
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a2eac6b8-229f-47d3-823a-ac466d18c8aa: # Bezeichnung
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: bezeichnung
+    instructions: ''
+    name: Bezeichnung
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f162ab5b-0e8b-4781-a01e-3f759b3a83f6: # Datum
+    columnSuffix: null
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: datum
+    instructions: ''
+    name: Datum
+    searchable: true
+    settings:
+      max: null
+      min: null
+      minuteIncrement: '30'
+      showDate: true
+      showTime: false
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date

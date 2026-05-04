@@ -1,0 +1,26 @@
+{% extends "_layout" %}
+{% set title = "Kontakt" %}
+
+{% block content %}
+        <div class="content">
+            <div class="container">
+                <h1 class="text-uppercase mb-4">Kontakt Center Management und Flächenvermietung</h1>
+                <img src="{{ entry.logo.one.getUrl() }}" class="apleona-logo">
+
+                <p>
+                    {{ entry.firmenname }}
+                    <br/>
+                    {{ entry.adresseStrasse }}
+                    <br/>
+                    {{ entry.plzOrt }}
+                    <br/>
+                    <br/>
+                    Tel. {{ entry.telefonnummer }}
+                    <br/>
+                    <a class="font-weight-semibold text-dark" href="mailto:{{ entry.eMailAdresse }}">E-Mail</a>
+                </p>
+				
+				{% include '/_map' %}
+            </div>
+        </div>
+{% endblock %}	

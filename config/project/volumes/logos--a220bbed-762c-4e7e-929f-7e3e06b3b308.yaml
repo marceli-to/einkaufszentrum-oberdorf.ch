@@ -1,0 +1,38 @@
+fieldLayouts:
+  12443049-723f-43be-85d3-04c2917faaa1:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fs: logos
+handle: logos
+hasUrls: true
+name: Logos
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+url: /assets/logos
