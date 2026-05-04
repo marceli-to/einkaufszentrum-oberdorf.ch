@@ -4,6 +4,7 @@
 .DS_Store
 /storage
 /web/assets
+/config/license.key
 
 # .data
 /.data
